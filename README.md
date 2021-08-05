@@ -1,5 +1,7 @@
 # Calendar-App
 
+This is the Front end for the calendar app. Back end repository link: [Back end](https://github.com/rb59/calendar-app-backend)
+
 This project was created using React, React Redux, Node, Express and MongoDB. It is a simple calendar app which allows you to create events whenever you want, modify existing events, delete them or simply watch them in an agenda-like view.
 
 ## Installation
