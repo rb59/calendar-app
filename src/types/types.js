@@ -1,7 +1,11 @@
-export const types = {
+export const types = { //cd
     // Auth
-    login: '[auth] Login',
-    logout: '[auth] Logout',
+    authLogin: '[auth] Login',
+    authLogout: '[auth] Logout',
+    authRegister: '[auth] Register',
+    authCheking: '[auth] Cheking login state',
+    authFinishCheking: '[auth] Finish Cheking login state',
+    authRenewToken: '[auth] Renew token',
     //UI
     uiOpenModal: '[ui] Open modal',
     uiCloseModal: '[ui] Close modal',
