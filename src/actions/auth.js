@@ -1,6 +1,7 @@
 import { fetchWithoutToken, fetchWithToken } from '../helpers/fetch';
 import { showErrors } from '../helpers/showErrors';
 import { types } from '../types/types';
+import { eventLogoutCleaning } from './calendar';
 
 export const startLogin = (email, password) => {
     return async (dispatch) => {
@@ -72,6 +73,7 @@ export const startLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('token-init-date');
         dispatch(logout());
+        dispatch(eventLogoutCleaning());
     };
 };
 
